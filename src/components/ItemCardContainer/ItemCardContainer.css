@@ -1,0 +1,28 @@
+.itemCard {
+  width: 200px;
+  /* to position add to cart button */
+  position: relative;
+}
+
+.itemCard h3 {
+  font-size: 16px;
+}
+
+.category {
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.name {
+  margin: 5px 0;
+}
+
+.price {
+  color: var(--Red);
+}
+
+.itemCard img {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+}

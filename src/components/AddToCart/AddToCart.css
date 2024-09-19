@@ -1,0 +1,24 @@
+.addToCart {
+  width: 130px;
+  height: 32px;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(200px - 16px);
+  left: calc((200px - 130px) / 2);
+}
+
+.addToCart p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.addToCart img {
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
