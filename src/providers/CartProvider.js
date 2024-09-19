@@ -12,8 +12,11 @@ const cartReducer = (state, action) => {
   const payload = action.payload;
   switch (action.type) {
     case 'addToCart':
-      console.log(`adding ${payload} to cart`);
-      return { cart: [...state.cart, { item: payload.item, price: payload.price, amount: payload.amount }] };
+      console.log(`adding ${JSON.stringify(payload)} to cart`);
+      const newCart = { cart: { ...state.cart, [payload.item]: { price: payload.price, amount: payload.amount } } };
+      console.log(`new cart ${JSON.stringify(newCart)}`);
+      return newCart;
+    // return { cart: [...state.cart, { item: payload.item, price: payload.price, amount: payload.amount }] };
     case 'clearCart':
       return { cart: [] };
     default:
@@ -22,7 +25,7 @@ const cartReducer = (state, action) => {
 }
 
 export function CartProvider({ children }) {
-  const [state, dispatch] = useReducer(cartReducer, { cart: [] });
+  const [state, dispatch] = useReducer(cartReducer, { cart: {} });
 
   return (
     <cartContext.Provider value={{ state, dispatch }}>
