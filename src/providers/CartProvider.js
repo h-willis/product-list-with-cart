@@ -6,12 +6,18 @@ const cartReducer = (state, action) => {
   console.log(`cart reducer ${action.type}`);
   const payload = action.payload;
   switch (action.type) {
-    case 'addToCart':
+    case 'addToCart': {
       console.log(`adding ${JSON.stringify(payload)} to cart`);
       const newCart = { cart: { ...state.cart, [payload.item]: { price: payload.price, amount: payload.amount } } };
       console.log(`new cart ${JSON.stringify(newCart)}`);
       return newCart;
-    // return { cart: [...state.cart, { item: payload.item, price: payload.price, amount: payload.amount }] };
+    }
+    case 'removeItem': {
+      console.log(`removing itme ${payload.item}`);
+      const newCart = { ...state.cart };
+      delete newCart[payload.item];
+      return { cart: newCart };
+    }
     case 'clearCart':
       return { cart: [] };
     default:

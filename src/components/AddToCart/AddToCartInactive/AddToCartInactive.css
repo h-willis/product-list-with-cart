@@ -1,0 +1,30 @@
+.inactive {
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  top: calc(200px - 16px);
+  left: calc((200px - 130px) / 2);
+  cursor: pointer;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inactive img {
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
+
+.inactive p {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.inactive:hover {
+  color: var(--Red);
+  border-color: var(--Red);
+}
