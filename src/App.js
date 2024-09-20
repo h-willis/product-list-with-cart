@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
-      <h1>Desserts</h1>
       <CartProvider >
-        <Cart />
-        <ItemGrid />
+        <h1>Desserts</h1>
+        <div className='mainLayout'>
+          <ItemGrid />
+          <Cart />
+        </div>
       </CartProvider>
     </>
   );

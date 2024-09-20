@@ -2,11 +2,6 @@ import React, { useReducer, createContext, useContext } from 'react';
 
 const cartContext = createContext();
 
-// [
-//   {item, price, amount},
-//   {item, price, amount}
-// ]
-
 const cartReducer = (state, action) => {
   console.log(`cart reducer ${action.type}`);
   const payload = action.payload;

@@ -18,7 +18,7 @@ function AddToCart({ item, price }) {
   return (
     <div className='addToCart' onClick={addToCart}>
       <img src={'images/icon-add-to-cart.svg'} alt='Add to cart icon' />
-      <p>{`add to cart ${amount}`}</p>
+      <p>{`Add to Cart ${amount}`}</p>
     </div>
   )
 }

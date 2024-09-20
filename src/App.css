@@ -17,7 +17,10 @@
 
 body {
   background-color: #fcf8f5;
+}
 
+.mainLayout {
+  display: flex;
 }
 
 .App {
