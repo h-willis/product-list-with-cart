@@ -4,7 +4,7 @@ import './AddToCart.css';
 import AddToCartInactive from './AddToCartInactive/AddToCartInactive';
 import AddToCartActive from './AddToCartActive/AddToCartActive';
 
-function AddToCart({ item, price }) {
+function AddToCart({ item, price, onSelection }) {
   const [amount, setAmount] = useState(0);
   const { dispatch, state } = useCart();
 
@@ -12,16 +12,19 @@ function AddToCart({ item, price }) {
   useEffect(() => {
     if (amount === 0) {
       dispatch({ type: 'removeItem', payload: { item } });
+      onSelection(false);
       return;
     }
     console.log(`adding to cart ${item} ${price} ${amount}`);
     dispatch({ type: 'addToCart', payload: { item, price, amount } });
+    onSelection(true);
   }, [amount]);
 
   // delete comes from cart
   useEffect(() => {
     if (!Object.hasOwn(state.cart, item)) {
       setAmount(0);
+      onSelection(false);
     }
   }, [state]);
 
