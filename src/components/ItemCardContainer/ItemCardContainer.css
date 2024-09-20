@@ -4,17 +4,14 @@
   position: relative;
 }
 
-.itemCard h3 {
-  font-size: 13px;
-}
-
 .category {
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 25px;
   color: var(--Rose500);
 }
 
 .name {
+  font-size: 12px;
   margin: 5px 0;
   color: var(--Rose700);
 }
@@ -26,5 +23,7 @@
 }
 
 .itemPrice {
+  font-size: 12px;
+  font-weight: 600;
   color: var(--Red);
 }

@@ -15,7 +15,7 @@
 .active p {
   font-size: 12px;
   color: white;
-  margin: 0 25px;
+  margin: 0 auto;
 }
 
 .icon svg {
@@ -39,4 +39,12 @@
 
 .icon:hover path {
   fill: var(--Red);
+}
+
+.iconDec {
+  margin-left: 10px;
+}
+
+.iconInc {
+  margin-right: 10px;
 }

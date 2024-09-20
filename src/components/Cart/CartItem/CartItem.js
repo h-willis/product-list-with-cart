@@ -13,7 +13,7 @@ function CartItem({ item, price, amount }) {
   return (
     <div className='cartItem'>
       <div className='itemTotals'>
-        <h3>{item}</h3>
+        <h3 className='cartItemName'>{item}</h3>
         <div className='subTotals'>
           <p className='stAmount'>{amount}x </p>
           <p className='stPrice'>@ ${price.toFixed(2)}</p>

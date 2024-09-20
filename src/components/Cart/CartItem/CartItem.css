@@ -5,6 +5,12 @@
   width: 100%;
 }
 
+.cartItemName {
+  color: var(--Rose900);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .removeItem {
   margin-left: auto;
   margin-top: 10px;
@@ -12,14 +18,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+  border: 1px solid var(--Rose300);
+  border-radius: 50%;
 }
 
 .removeItem svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   padding: 3px;
-  border: 1px solid var(--Rose500);
-  border-radius: 50%;
+}
+
+.removeItem path {
+  fill: var(--Rose300);
+}
+
+.removeItem:hover path {
+  fill: var(--Rose500);
+}
+
+.removeItem:hover {
+  border-color: var(--Rose500);
 }
 
 

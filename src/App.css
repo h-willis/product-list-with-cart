@@ -28,7 +28,7 @@ body {
 
 .mainLayout {
   display: flex;
-  /* margin: 25px; */
+  margin: 100px;
 }
 
 .App {
