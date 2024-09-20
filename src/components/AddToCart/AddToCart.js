@@ -20,13 +20,9 @@ function AddToCart({ item, price }) {
 
   // delete comes from cart
   useEffect(() => {
-    let itemDeleted = true;
-    Object.entries(state.cart).forEach(([key, value]) => {
-      if (key === item) {
-        itemDeleted = false;
-      }
-    });
-    if (itemDeleted) setAmount(0);
+    if (!Object.hasOwn(state.cart, item)) {
+      setAmount(0);
+    }
   }, [state]);
 
   // could make these their own components but they're not too complex

@@ -2,6 +2,7 @@
   display: flex;
   border-bottom: 1px solid black;
   padding-bottom: 5px;
+  width: 100%;
 }
 
 .removeItem {
@@ -17,6 +18,27 @@
   width: 16px;
   height: 16px;
   padding: 3px;
-  border: 1px solid black;
+  border: 1px solid var(--Rose500);
   border-radius: 50%;
+}
+
+
+.subTotals {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.subTotals .stAmount {
+  color: var(--Red);
+  font-weight: bold;
+}
+
+.subTotals .stPrice {
+  color: var(--Rose500);
+}
+
+.subTotals .stTotal {
+  color: var(--Rose600);
 }

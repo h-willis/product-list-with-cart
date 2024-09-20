@@ -9,6 +9,11 @@
   --Rose900: hsl(14, 65%, 9%);
 }
 
+@font-face {
+  font-family: 'RedHat';
+  src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +23,7 @@
 body {
   background-color: #fcf8f5;
   margin: 25px;
+  font-family: 'RedHat';
 }
 
 .mainLayout {

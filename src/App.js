@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <CartProvider >
-        <h1>Desserts</h1>
         <div className='mainLayout'>
           <ItemGrid />
           <Cart />

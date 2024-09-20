@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useCart } from '../../providers/CartProvider';
-import './Cart.css';
 import CartItem from './CartItem/CartItem';
+import './Cart.css';
 
 function Cart() {
   const { state } = useCart();
@@ -19,7 +19,7 @@ function Cart() {
 
   return (
     <div className='cart'>
-      <h1>{`Your Cart (${totalItems})`}</h1>
+      <h2>{`Your Cart (${totalItems})`}</h2>
       {Object.entries(state.cart).map(([item, value]) => {
         return <CartItem key={item} item={item} price={value.price} amount={value.amount} />
       })}

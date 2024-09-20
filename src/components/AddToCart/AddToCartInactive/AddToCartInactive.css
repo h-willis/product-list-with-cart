@@ -13,8 +13,8 @@
   align-items: center;
 }
 
-.inactive img {
-  margin-right: 10px;
+.inactive svg {
+  margin-right: 7px;
   height: 16px;
   width: 16px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import './ItemCardContainer.css';
 import AddToCart from '../AddToCart/AddToCart';
+import './ItemCardContainer.css';
 
 function ItemCardContainer({ imgSrc, category, name, price }) {
   return (
@@ -9,7 +9,7 @@ function ItemCardContainer({ imgSrc, category, name, price }) {
       <AddToCart item={name} price={price} />
       <p className='category'>{category}</p>
       <h3 className='name'>{name}</h3>
-      <h3 className='price'>{`$${price.toFixed(2)}`}</h3>
+      <h3 className='itemPrice'>{`$${price.toFixed(2)}`}</h3>
     </div>
   )
 }

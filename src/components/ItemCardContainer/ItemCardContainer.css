@@ -5,24 +5,26 @@
 }
 
 .itemCard h3 {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .category {
   font-size: 12px;
   margin-top: 25px;
+  color: var(--Rose500);
 }
 
 .name {
   margin: 5px 0;
-}
-
-.price {
-  color: var(--Red);
+  color: var(--Rose700);
 }
 
 .itemCard img {
   width: 200px;
   height: 200px;
   border-radius: 6px;
+}
+
+.itemPrice {
+  color: var(--Red);
 }

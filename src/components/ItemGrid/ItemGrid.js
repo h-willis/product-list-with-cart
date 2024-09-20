@@ -23,11 +23,16 @@ function ItemGrid() {
   }, []);
 
   return (
-    <div className='cardGrid'>
-      {products.map(product => (
-        <ItemCardContainer imgSrc={product.image.desktop} category={product.category} name={product.name} price={product.price} key={product.name} />
-      ))}
-    </div>
+    <>
+      <div>
+        <h1>Desserts</h1>
+        <div className='cardGrid'>
+          {products.map(product => (
+            <ItemCardContainer imgSrc={product.image.desktop} category={product.category} name={product.name} price={product.price} key={product.name} />
+          ))}
+        </div>
+      </div>
+    </>
   )
 }
 
