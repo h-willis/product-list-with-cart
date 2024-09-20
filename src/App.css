@@ -17,10 +17,12 @@
 
 body {
   background-color: #fcf8f5;
+  margin: 25px;
 }
 
 .mainLayout {
   display: flex;
+  /* margin: 25px; */
 }
 
 .App {
