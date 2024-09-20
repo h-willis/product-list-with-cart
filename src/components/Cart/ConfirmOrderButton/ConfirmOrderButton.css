@@ -1,0 +1,19 @@
+.confirmOrderModal {
+  width: 600px;
+  height: fit-content;
+}
+
+.confirmOrderModal svg {
+  margin-bottom: 30px;
+}
+
+.confirmOrderModal h1 {
+  color: var(--Rose900);
+}
+
+.orderSummary {
+  background-color: var(--Rose100);
+  border-radius: 6px;
+  width: 512;
+  margin: 30px 0;
+}

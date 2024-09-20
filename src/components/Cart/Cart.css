@@ -52,6 +52,16 @@
   margin-right: 8px;
 }
 
+.carbonNeutralBold {
+  font-weight: 600;
+  display: inline-block;
+  white-space: normal;
+}
+
+.carbonNeutralText {
+  display: inline-block;
+}
+
 .cart button {
   all: unset;
   display: flex;

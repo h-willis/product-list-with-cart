@@ -1,7 +1,8 @@
 .cartItem {
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--Rose100);
   padding-bottom: 5px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -13,7 +14,8 @@
 
 .removeItem {
   margin-left: auto;
-  margin-top: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -24,8 +26,8 @@
 }
 
 .removeItem svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   padding: 3px;
 }
 
@@ -44,7 +46,7 @@
 
 .subTotals {
   display: flex;
-  justify-content: space-evenly;
+  width: 200px;
   font-size: 14px;
   margin: 8px 0;
 }
@@ -52,10 +54,12 @@
 .subTotals .stAmount {
   color: var(--Red);
   font-weight: bold;
+  margin-right: 15px;
 }
 
 .subTotals .stPrice {
   color: var(--Rose500);
+  margin-right: 15px;
 }
 
 .subTotals .stTotal {
