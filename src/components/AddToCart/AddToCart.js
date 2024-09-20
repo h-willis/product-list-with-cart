@@ -6,17 +6,28 @@ import AddToCartActive from './AddToCartActive/AddToCartActive';
 
 function AddToCart({ item, price }) {
   const [amount, setAmount] = useState(0);
-  const { dispatch } = useCart();
+  const { dispatch, state } = useCart();
 
+  // delete from here
   useEffect(() => {
     if (amount === 0) {
-      // TODO dispatch removeItem
       dispatch({ type: 'removeItem', payload: { item } });
       return;
     }
     console.log(`adding to cart ${item} ${price} ${amount}`);
     dispatch({ type: 'addToCart', payload: { item, price, amount } });
   }, [amount]);
+
+  // delete comes from cart
+  useEffect(() => {
+    let itemDeleted = true;
+    Object.entries(state.cart).forEach(([key, value]) => {
+      if (key === item) {
+        itemDeleted = false;
+      }
+    });
+    if (itemDeleted) setAmount(0);
+  }, [state]);
 
   // could make these their own components but they're not too complex
   return (

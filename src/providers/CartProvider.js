@@ -7,13 +7,10 @@ const cartReducer = (state, action) => {
   const payload = action.payload;
   switch (action.type) {
     case 'addToCart': {
-      console.log(`adding ${JSON.stringify(payload)} to cart`);
       const newCart = { cart: { ...state.cart, [payload.item]: { price: payload.price, amount: payload.amount } } };
-      console.log(`new cart ${JSON.stringify(newCart)}`);
       return newCart;
     }
     case 'removeItem': {
-      console.log(`removing itme ${payload.item}`);
       const newCart = { ...state.cart };
       delete newCart[payload.item];
       return { cart: newCart };

@@ -1,0 +1,11 @@
+.cart {
+  width: 384px;
+  height: fit-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.cart h1 {
+  color: var(--Red);
+}
