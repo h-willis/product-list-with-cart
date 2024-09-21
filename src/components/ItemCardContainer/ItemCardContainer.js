@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddToCart from '../AddToCart/AddToCart';
 import './ItemCardContainer.css';
 
-function ItemCardContainer({ imgSrc, category, name, price }) {
+function ItemCardContainer({ product }) {
   const [selected, setSelected] = useState(false);
 
   function handleSelection(selected) {
@@ -12,11 +12,11 @@ function ItemCardContainer({ imgSrc, category, name, price }) {
 
   return (
     <div className={`itemCard`}>
-      <img src={imgSrc} alt={name} className={`${selected ? 'selected' : ''}`} />
-      <AddToCart item={name} price={price} onSelection={handleSelection} />
-      <p className='category'>{category}</p>
-      <h3 className='name'>{name}</h3>
-      <h3 className='itemPrice'>{`$${price.toFixed(2)}`}</h3>
+      <img src={product.image.desktop} alt={product.name} className={`${selected ? 'selected' : ''}`} />
+      <AddToCart item={product.name} price={product.price} onSelection={handleSelection} />
+      <p className='category'>{product.category}</p>
+      <h3 className='product.name'>{product.name}</h3>
+      <h3 className='itemPrice'>{`$${product.price.toFixed(2)}`}</h3>
     </div>
   )
 }
