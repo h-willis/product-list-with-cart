@@ -23,3 +23,10 @@
     height: auto;
   }
 }
+
+/* @media (max-width: 375px) {
+  .cardGrid {
+    width: 328px;
+    height: 210px;
+  }
+} */

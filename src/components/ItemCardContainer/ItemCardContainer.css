@@ -27,6 +27,14 @@
   /* box-sizing: content-box; */
 }
 
+@media (max-width: 375px) {
+  .itemCard img {
+    width: 328px;
+    height: 210px;
+  }
+
+}
+
 .itemPrice {
   font-size: 12px;
   font-weight: 600;
