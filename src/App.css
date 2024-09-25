@@ -7,6 +7,7 @@
   --Rose400: hsl(7, 20%, 60%);
   --Rose500: hsl(12, 20%, 44%);
   --Rose900: hsl(14, 65%, 9%);
+  --slimlayout: 1124px;
 }
 
 @font-face {
@@ -22,11 +23,19 @@
 
 body {
   background-color: #fcf8f5;
-  margin: 25px;
+  margin: 25px 0;
   font-family: 'RedHat';
 }
 
+/* 1124px move cart to */
+
 .mainLayout {
   display: flex;
-  margin: 100px;
+  margin: 100px 25px 100px 100px;
+}
+
+@media (max-width: 1124px) {
+  .mainLayout {
+    flex-direction: column;
+  }
 }
