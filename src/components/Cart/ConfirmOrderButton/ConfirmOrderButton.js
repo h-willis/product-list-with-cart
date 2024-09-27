@@ -8,7 +8,7 @@ import './ConfirmOrderButton.css'
 function ConfirmOrderButton({ handleConfirm }) {
 
   return (
-    <button onClick={handleConfirm}>Confirm Order</button>
+    <button className='confirmOrderButton' onClick={handleConfirm}>Confirm Order</button>
   )
 }
 
