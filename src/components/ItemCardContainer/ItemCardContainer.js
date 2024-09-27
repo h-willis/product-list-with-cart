@@ -17,7 +17,7 @@ function ItemCardContainer({ product }) {
         srcset={`${product.image.mobile} 654w,
         ${product.image.tablet} 427w,
         ${product.image.desktop} 502w`}
-        sizes={"(max-width: 1124px) 502px, (max-width: 760px) 427px, (max-width: 375px) 654px"}
+        sizes={"(max-width: 375px) 654px, (max-width: 760px) 427px, 502px"}
         alt={product.name} />
       <AddToCart item={product.name} price={product.price} onSelection={handleSelection} />
       <p className='category'>{product.category}</p>
