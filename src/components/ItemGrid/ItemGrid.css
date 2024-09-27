@@ -34,4 +34,8 @@
     grid-template-rows: repeat(9, 1fr);
     margin: auto 0;
   }
+
+  .title {
+    margin-left: 24px;
+  }
 }

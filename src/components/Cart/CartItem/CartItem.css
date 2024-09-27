@@ -22,7 +22,7 @@
   align-items: center;
   height: fit-content;
   border: 1px solid var(--Rose300);
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .removeItem svg {
