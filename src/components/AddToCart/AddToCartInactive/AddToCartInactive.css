@@ -13,6 +13,22 @@
   align-items: center;
 }
 
+.inactive svg {
+  margin-right: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.inactive p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.inactive:hover {
+  color: var(--Red);
+  border-color: var(--Red);
+}
+
 @media (max-width: 375px) {
   .inactive {
     position: absolute;
@@ -22,20 +38,15 @@
     top: calc(210px - 21px);
     left: calc((328px - 160px) / 2);
   }
-}
 
-.inactive svg {
-  margin-right: 7px;
-  height: 20px;
-  width: 20px;
-}
+  .inactive svg {
+    margin-right: 7px;
+    height: 20px;
+    width: 20px;
+  }
 
-.inactive p {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.inactive:hover {
-  color: var(--Red);
-  border-color: var(--Red);
+  .inactive p {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
