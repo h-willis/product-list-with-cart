@@ -1,5 +1,6 @@
 .cart {
-  width: 384px;
+  --cart-width: 384px;
+  width: var(--cart-width);
   height: fit-content;
   background-color: white;
   padding: 20px;
@@ -9,6 +10,12 @@
 @media (max-width: 760px) {
   .cart {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .cart {
+    width: calc(var(--cart-width) - 48px);
   }
 }
 
