@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useCart } from '../../providers/CartProvider';
-import './AddToCart.css';
 import AddToCartInactive from './AddToCartInactive/AddToCartInactive';
 import AddToCartActive from './AddToCartActive/AddToCartActive';
+import './AddToCart.css';
 
 function AddToCart({ item, price, onSelection }) {
   const [amount, setAmount] = useState(0);
