@@ -24,18 +24,35 @@
   width: 200px;
   height: 200px;
   border-radius: 6px;
-  /* box-sizing: content-box; */
-}
-
-@media (max-width: 375px) {
-  .itemCard img {
-    width: 328px;
-    height: 210px;
-  }
 }
 
 .itemPrice {
   font-size: 12px;
   font-weight: 600;
   color: var(--Red);
+}
+
+@media (max-width: 375px) {
+  .itemCard {
+    width: calc(375px - 2*24px);
+    margin-left: 24px;
+    /* margin: 0 auto; */
+  }
+
+  .itemCard img {
+    width: 328px;
+    height: 210px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .category {
+    font-size: 16px;
+  }
+
+  .itemPrice {
+    font-size: 16px;
+  }
 }
