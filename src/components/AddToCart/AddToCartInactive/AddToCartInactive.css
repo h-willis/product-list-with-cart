@@ -13,14 +13,25 @@
   align-items: center;
 }
 
+@media (max-width: 375px) {
+  .inactive {
+    position: absolute;
+    width: 160px;
+    height: 42px;
+    border-radius: 21px;
+    top: calc(210px - 21px);
+    left: calc((328px - 160px) / 2);
+  }
+}
+
 .inactive svg {
   margin-right: 7px;
-  height: 16px;
-  width: 16px;
+  height: 20px;
+  width: 20px;
 }
 
 .inactive p {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
 }
 

@@ -12,8 +12,20 @@
   align-items: center;
 }
 
+@media (max-width: 375px) {
+  .active {
+    position: absolute;
+    width: 160px;
+    height: 42px;
+    border-radius: 21px;
+    top: calc(210px - 21px);
+    left: calc((328px - 160px) / 2);
+  }
+}
+
 .active p {
   font-size: 12px;
+  font-weight: 600;
   color: white;
   margin: 0 auto;
 }
@@ -42,9 +54,9 @@
 }
 
 .iconDec {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 .iconInc {
-  margin-right: 10px;
+  margin-right: 14px;
 }

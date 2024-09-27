@@ -34,7 +34,7 @@
 
 @media (max-width: 375px) {
   .itemCard {
-    width: calc(375px - 2*24px);
+    width: 328px;
   }
 
   .itemCard img {
