@@ -3,6 +3,7 @@ import Modal from './Modal/Modal';
 import OrderConfirmedIcon from '../../../icons/OrderConfirmedIcon';
 import CartSummaryItem from './CartSummaryItem/CartSummaryItem';
 import { useCart } from '../../../providers/CartProvider';
+import './ConfirmOrderSummaryModal.css'
 
 function ConfirmOrderSummaryModal({ modalOpen, setModalOpen, totalPrice }) {
   const { state, dispatch } = useCart();

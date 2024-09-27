@@ -1,0 +1,60 @@
+.confirmOrderModal {
+  width: 600px;
+  height: fit-content;
+}
+
+.confirmOrderModal svg {
+  margin-bottom: 30px;
+}
+
+.confirmOrderModal h1 {
+  color: var(--Rose900);
+}
+
+.orderConfirmed {
+  color: var(--Rose900);
+  margin-bottom: 15px;
+}
+
+.enjoyYourFood {
+  color: var(--Rose500);
+}
+
+.orderSummary {
+  background-color: var(--Rose50);
+  border-radius: 6px;
+  width: 512px;
+  margin: 30px 0;
+  padding: 24px;
+}
+
+@media (max-width: 375px) {
+  .confirmOrderModal {
+    width: 375px;
+  }
+
+  .orderSummary {
+    width: 325px;
+  }
+
+  .confirmOrderModal h1 {
+    width: min-content;
+  }
+}
+
+.orderTotal {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderTotal p {
+  color: var(--Rose500);
+  font-weight: 500;
+}
+
+.orderTotal h2 {
+  margin: 0;
+  color: var(--Rose900);
+}
