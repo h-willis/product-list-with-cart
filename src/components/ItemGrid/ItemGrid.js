@@ -9,7 +9,7 @@ function ItemGrid() {
   return (
     <>
       <div>
-        <h1>Desserts</h1>
+        <h1 className='title'>Desserts</h1>
         <div className='cardGrid'>
           {products.map(product => (
             <ItemCardContainer key={product.name} product={product} />

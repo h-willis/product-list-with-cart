@@ -9,6 +9,10 @@
   height: 100vh;
 }
 
+.title {
+  margin-bottom: 25px;
+}
+
 @media (max-width: 1124px) {
   .cardGrid {
     /* margin-bottom: 100px; */
