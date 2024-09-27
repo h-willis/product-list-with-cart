@@ -16,6 +16,7 @@
 @media (max-width: 375px) {
   .cart {
     width: calc(var(--cart-width) - 48px);
+    margin-top: 24px;
   }
 }
 
