@@ -9,13 +9,13 @@
 }
 
 .category {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 25px;
   color: var(--Rose500);
 }
 
 .name {
-  font-size: 12px;
+  font-size: 14px;
   margin: 5px 0;
   color: var(--Rose900);
 }
@@ -32,7 +32,6 @@
     width: 328px;
     height: 210px;
   }
-
 }
 
 .itemPrice {
