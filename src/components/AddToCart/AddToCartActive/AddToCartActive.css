@@ -18,26 +18,26 @@
   margin: 0 auto;
 }
 
-.icon svg {
-  width: 14px;
+.iconContainer svg {
   height: 14px;
+  width: 14px;
   padding: 3px;
 }
 
-.icon {
+.iconContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border: 1px white solid;
   border-radius: 50%;
   margin: 0;
 }
 
-.icon:hover {
+.iconContainer:hover {
   background-color: white;
 }
 
-.icon:hover path {
+.iconContainer:hover path {
   fill: var(--Red);
 }
 

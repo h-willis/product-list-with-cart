@@ -14,11 +14,11 @@ function AddToCartActive({ amount, setAmount }) {
 
   return (
     <div className='active'>
-      <div className='icon iconDec' onClick={decrementAmount}>
+      <div className='iconContainer iconDec' onClick={decrementAmount}>
         <DecrementIcon />
       </div>
       <p>{amount}</p>
-      <div className='icon iconInc' onClick={incrementAmount}>
+      <div className='iconContainer iconInc' onClick={incrementAmount}>
         <IncrementIcon />
       </div>
     </div>
